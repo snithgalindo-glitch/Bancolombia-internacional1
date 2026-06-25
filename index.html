@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bancolombia Internacional</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="login-container" class="main-wrapper">
+        <header class="top-header">
+            <div class="logo">
+                <div class="brand-logo-icon"></div>
+                <div class="logo-text">
+                    <span class="brand">BANCOLOMBIA</span>
+                    <span class="sub-brand">INTERNACIONAL</span>
+                </div>
+            </div>
+            <div class="language-selector">
+                <i class="fa-solid fa-globe"></i> Español <i class="fa-solid fa-chevron-down small-arrow"></i>
+            </div>
+        </header>
+
+        <main class="content-body">
+            <div class="hero-section">
+                <h1>Bienvenido a <br><span class="bold-text">Bancolombia Internacional</span></h1>
+                <p>Su aliado internacional para hacer crecer su patrimonio con seguridad y confianza.</p>
+            </div>
+
+            <div class="login-card-container">
+                <div class="login-card">
+                    <h2>Iniciar sesión</h2>
+                    <p class="subtitle">Acceda a su cuenta para continuar</p>
+
+                    <form id="login-form">
+                        <div class="input-group">
+                            <label for="usuario">Usuario</label>
+                            <div class="input-wrapper">
+                                <input type="text" id="usuario" placeholder="Ingrese su usuario" required>
+                                <i class="fa-regular fa-user input-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="password">Contraseña</label>
+                            <div class="input-wrapper">
+                                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+                                <i class="fa-regular fa-eye-slash input-icon toggle-password" id="togglePass"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <label class="checkbox-container">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Recordar usuario
+                            </label>
+                            <a href="#" class="forgot-link">¿Olvidó su contraseña?</a>
+                        </div>
+
+                        <button type="submit" class="btn-primary">Ingresar</button>
+                    </form>
+
+                    <div class="divider"><span>o</span></div>
+
+                    <button class="btn-secondary">
+                        <i class="fa-solid fa-lock"></i> Ingresar con Token
+                    </button>
+
+                    <div class="card-footer">
+                        ¿No tiene una cuenta? <a href="#">Contáctenos</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <section class="features-section">
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-shield-halved fa-solid"></i></div>
+                <div class="feature-text">
+                    <h3>Seguridad y confianza</h3>
+                    <p>Protegemos su información con los más altos estándares internacionales.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                <div class="feature-text">
+                    <h3>Acceso global</h3>
+                    <p>Administre sus finanzas desde cualquier lugar del mundo.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon"><i class="fa-solid fa-headset"></i></div>
+                <div class="feature-text">
+                    <h3>Atención personalizada</h3>
+                    <p>Nuestro equipo de expertos está listo para ayudarle en cada decisión.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-links">
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Seguridad</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Políticas de privacidad</a>
+                <a href="#">Contáctenos</a>
+            </div>
+            <div class="footer-copy">
+                © 2026 Bancolombia Internacional. Todos los derechos reservados.
+            </div>
+        </footer>
+    </div>
+
+
+    <div id="dashboard-container" class="dashboard-wrapper hidden">
+        
+        <header class="dash-header">
+            <div class="logo">
+                <div class="brand-logo-icon"></div>
+                <div class="logo-text">
+                    <span class="brand">BANCOLOMBIA</span>
+                    <span class="sub-brand">INTERNACIONAL</span>
+                </div>
+            </div>
+            <nav class="dash-nav">
+                <a href="#" class="active">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Premios</a>
+                <a href="#">Soluciones</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <button id="btn-logout" class="btn-nav-session">
+                Cerrar sesión <i class="fa-solid fa-user-xmark icon-right"></i>
+            </button>
+        </header>
+
+        <section class="dash-hero">
+            <div class="dash-hero-content">
+                <h1>Bienvenido <br><span id="user-logged" class="user-highlight">Raquel Flórez Duque</span></h1>
+                <p class="dash-hero-sub">Su aliado internacional para hacer crecer su patrimonio con seguridad y confianza.</p>
+                <button class="btn-gold-action">Conozca más</button>
+            </div>
+            <div class="dash-hero-image-placeholder"></div>
+        </section>
+
+        <section class="pillars-grid">
+            <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-globe"></i></div>
+                <h4>Presencia Global</h4>
+                <p>Conectamos sus finanzas con oportunidades en todo el mundo.</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h4>Seguridad</h4>
+                <p>Soluciones financieras respaldadas por la solidez del Grupo Bancolombia.</p>
+            </div>
+            <div class="pillar-card highlighted-pillar">
+                <div class="pillar-icon"><i class="fa-solid fa-award"></i></div>
+                <h4>Reconocimiento</h4>
+                <p class="gold-label">Premio en Dólares</p>
+                <p class="gold-value">3.747.000,00 USD</p>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-regular fa-user"></i></div>
+                <h4>Asesoría Personalizada</h4>
+                <p>Un equipo experto para acompañarlo en cada decisión.</p>
+            </div>
+        </section>
+
+        <section class="banner-info-block gold-accent-block">
+            <div class="banner-left">
+                <div class="large-badge-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div class="banner-text-group">
+                    <span class="label">Premio en dólares:</span>
+                    <h2 class="main-amount">3.747.000,00 USD</h2>
+                </div>
+            </div>
+            <div class="banner-right">
+                <p>Su premio ya puede ser desembolsado y retirado en el Bank of America.</p>
+            </div>
+        </section>
+
+        <section class="banner-info-block white-bg-block">
+            <div class="banner-left">
+                <div class="large-badge-icon grey-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="banner-text-group">
+                    <span class="label dark-label">Tiene un saldo pendiente de</span>
+                    <h2 class="main-amount blue-amount">$2.357 USD</h2>
+                </div>
+            </div>
+            <div class="banner-right bank-flex">
+                <p class="bank-notice-text">
+                    por caducidad de tarjeta. Póngase al día con sus responsabilidades para obtener su dinero en Bank of America para el día 16 de junio 2026.
+                </p>
+                <div class="bank-logo-placeholder">
+                    <span class="red-flag-icon"></span>
+                    <span class="bank-name">BANK OF AMERICA</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="usa-connection-section">
+            <h3>Conectamos con usted desde Estados Unidos</h3>
+            <div class="usa-features">
+                <div class="usa-item">
+                    <i class="fa-solid fa-landmark-flag font-icon-usa"></i>
+                    <p>Atención directa desde EE. UU.</p>
+                </div>
+                <div class="usa-item">
+                    <i class="fa-solid fa-chart-line font-icon-usa"></i>
+                    <p>Soluciones adaptadas a sus necesidades</p>
+                </div>
+                <div class="usa-item">
+                    <i class="fa-solid fa-circle-check font-icon-usa"></i>
+                    <p>Respaldo y confianza internacional</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-contact-bar">
+            <div class="cta-left">
+                <h3>Estamos aquí para ayudarle</h3>
+                <p>Contáctenos y un asesor se comunicará con usted.</p>
+            </div>
+            <button class="btn-gold-phone"><i class="fa-solid fa-phone"></i> Contáctenos ahora</button>
+        </section>
+
+        <footer class="dash-footer">
+            <div class="logo">
+                <div class="brand-logo-icon mini"></div>
+                <div class="logo-text">
+                    <span class="brand mini-brand">BANCOLOMBIA INTERNACIONAL</span>
+                </div>
+            </div>
+            <div class="footer-center-links">
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Términos y condiciones</a>
+                <a href="#">Políticas de privacidad</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="footer-social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
